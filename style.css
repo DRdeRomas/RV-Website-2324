@@ -8,7 +8,6 @@
 
 body {
     background-color: rgb(242, 217, 208);
-    text-align: center;
 }
 
 /* NAVBAR CODE */
@@ -50,7 +49,6 @@ h1 {
     font-size: 2.25em;
     margin-top: 0.25em;
 }
-
 h2 {
     font-size: 2em;
     margin-bottom: 0.25em;
@@ -60,10 +58,10 @@ main {
     color: black;
     text-align: center;
     border: 2px dashed;
-    margin: 5em 20em;
+    margin: 3em 8em;
 }
 main img {
-    width: 700px;
+    width: 70%;
     border: 0.5em;
     border-style: inset;
     border-color: rgb(191, 42, 69)
@@ -72,14 +70,10 @@ main p {
     display: block;
     font-size: 1.20em;
     padding: 0.5em;
+    text-align: center;
 }
-
-.favorites ol {
-    display: inline-block;
-}
-
-.favorites li {
-    text-align: left;
+main ul li {
+    list-style: none;
 }
 
 /* BUTTON CODE: https://learn.shayhowe.com/advanced-html-css/transitions-animations/#transitions */
@@ -102,10 +96,13 @@ button:active {
     box-shadow: 0 0.05em 0 rgb(191, 42, 69);
     transform: translateY(0.5em);
 }
+button:hover {
+    background-color: black;
+    color: red;
+}
 
-/* PROFILE SECTIONS */
-.profile, .favorites, .concept {
-    background-color: rgba(191, 42, 69, 0.485);
+.members section, .concepts section, .titletracks section {
+    background-color: rgba(174, 27, 54, 0.485);
     width: 50%;
     border-color: white;
     border-style: dotted solid;
@@ -115,19 +112,22 @@ button:active {
     display: inline-block;
 }
 
-.profile img {
-    width: 500px;
-    border: 0.5em;
-    border-style: inset;
-    border-color: rgb(191, 42, 69)
+.concepts section {
+    margin: 1em; 
+    padding: 1em;
 }
 
-.profile li {
-    list-style: none;
+.titletracks section:last-child {
+    background-color: black;
+    color: red;
+    border-color: red;
 }
 
-.concept {
-    width: 70%;
+/* Gebruikt om als container te dienen voor de sections in mijn pagina om ze naast elkaar te kunnen zetten. 
+Hoe kan ik het beste benoemen? Een article misschien? */
+div {
+    display: flex;
+    justify-content: center;
 }
 
 /* Albums > Youtube Links */
@@ -141,7 +141,9 @@ main a:hover {
     opacity: 1;
 }
 
-/* BALL ANIMATION: https://youtu.be/eyn_HNRyDTg?si=JorFA9bW-f6zmiZC > Poging om animatie toe te voegen, maar lukte mij zelf niet en ook niet met deze code.
+/* BALL ANIMATION: https://youtu.be/eyn_HNRyDTg?si=JorFA9bW-f6zmiZC
+Poging om animatie toe te voegen, maar lukte mij zelf niet en ook niet met deze code.
+
 .bounce {
     position: absolute;
     top: 50%;
@@ -198,18 +200,6 @@ main a:hover {
         border-radius: 50px 50px 25px 25px;
         transform: scaleX(1.6);
     }
-} */
-
-/* 
-JAAR 1 CODE
-.intro {
-    border-color: hotpink;
-    border-style: inset;
-    font-size: 1em;
-    padding: 1em 3em;
-    border-width: 0.25;
-    border-radius: 1em;
-    position: relative;
 } */
 
 /* FOOTER CODE */
